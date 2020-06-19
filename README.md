@@ -26,11 +26,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Differences between using _sessions_ or _JSON Web Tokens_ for authentication.
 
+  Using sessions requires storing the session data either on the client's side or in the server. As the application scales up in size and acquires more users, storing this data can become problematic as it requires more and more storage space. JSON Web Tokens (or more commonly referred to as JWTs). They store data on the client side taking up a minimal amount of memory. With JWTs, there is no reason to store any session data on a server because token-based authentication is stateless
+
+
 2. What does `bcrypt` do to help us store passwords in a secure manner.
+
+  When storing passwords on a server, it is important not to save them as plain text, in case the data is compromised, the passwords aren't readily available. Bcrypt helps developers store passwords as long random strings instead of plain text
+
 
 3. How are unit tests different from integration and end-to-end testing.
 
+  Unit tests only test a very small portion of code, where integration testing tests multiple parts at a time, and end-to-end testing tests the entire application. With Unit testing, there are many smaller tests that can be run often, and because they are smaller in scale they can run very quickly, unlike integration and end-to-end tests which can take more time. 
+
+
 4. How _Test Driven Development_ changes the way we write applications and tests.
+
+  Testing effects how we create applications in a good way. It is hard to anticipate every single way a user might interact with an app, so writing tests that can check for edge cases helps developers from having to manually test these scenarios themselves. Tests can also be run over and over again, which helps save developers time by retesting older code after new code has been added to make sure there are no conflicts. If developers use testing while actively creating an application, then they can identify and solve problems early so they can deliver working and polished applications quickly.
+
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -38,12 +50,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [X] Create a forked copy of this project
+- [X] Add your team lead as collaborator on Github
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [X] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
