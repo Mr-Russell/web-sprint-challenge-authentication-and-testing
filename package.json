@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon index.js",
-    "test": "jest --watch"
+    "test": "jest --watch --runInBand"
   },
   "repository": {
     "type": "git",

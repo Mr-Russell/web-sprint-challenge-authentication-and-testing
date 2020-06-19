@@ -31,7 +31,7 @@ router.post('/register', (req, res) => {
       username: req.body.username,
       password: hash
     })
-    .then(user => res.status(200).json(`Thank you for Registering! Your ID number is ${user}`))
+    .then(user => res.status(200).json({message: `Thank you for Registering! Your ID number is ${user}`}))
     .catch(err => {
       console.log(err)
       res.status(500).json('An Error occurred while trying to register')
